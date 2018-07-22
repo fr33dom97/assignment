@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-echo $sql="Delete FROM client WHERE cID='".$_GET["cID"]."'";
+$sql="Delete FROM client WHERE cID='".$_GET["cID"]."'";
  if ($conn->query($sql)===TRUE){
     echo"<SCRIPT>
     alert('$tt');
